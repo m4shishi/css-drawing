@@ -11,15 +11,13 @@
             border-radius: 50%;
         }
 
-        .chin {
-            width: 45px;
-            height: 50px;
+        .facefiller {
+            width: 90px;
+            height: 40px;
             position: absolute;
-            top: 435px;
-            left: 208px;
-            background: #000000;
-            border-radius: 40px;
-            /* border-radius: 50%; */
+            top: 440px;
+            left: 180px;
+            background: #EEEFF1;
         }
 
         .lefteye {
@@ -45,13 +43,49 @@
         }
 
         .lip{
-            width: 20px;
-            height: 30px;
+            width: 45px;
+            height: 15px;
             position: absolute;
+            z-index: 2;
             top: 410px;
-            left: 220px;
+            left: 211px;
             background: #4E8EAD;
             border-radius: 50%;
+        }
+
+        .chin {
+            width: 49px;
+            height: 50px;
+            position: absolute;
+            top: 433px;
+            left: 205px;
+            background: #EEEFF1;
+            border-radius: 40px;
+            /* border-radius: 50%; */
+        }
+
+        .trichin1{
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 444px;
+            left: 180px;
+            z-index: 1;
+            border-style: solid;
+            border-width: 37px 0 0 37px;
+            border-color: transparent transparent transparent #ffffff;
+        }
+
+        .trichin2{
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 445px;
+            left: 240px;
+            z-index: 1;
+            border-style: solid;
+            border-width: 0 0 37px 37px;
+            border-color: transparent transparent #ffffff transparent
         }
 
     </style>
@@ -63,4 +97,7 @@
     <div class="righteye"></div>
     <div class="lip"></div>
     <div class="chin"></div>
+    <div class="trichin1"></div>
+    <div class="trichin2"></div>
+    <div class="facefiller"></div>
 </body>
