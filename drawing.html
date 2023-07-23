@@ -47,9 +47,10 @@
             width: 80px; 
             height: 390px; 
             position: absolute;
-        
+            transform: rotate(4deg);
             top: 142px;
             left: 298px;
+            border-radius: 30px;
             background: rgb(0, 0, 0); 
         }
 
@@ -57,18 +58,30 @@
             width: 100px; 
             height: 390px; 
             position: absolute;
-        
+            transform: rotate(7deg);
+            border-radius: 30px;
             top: 142px;
             left: 70px;
             background: rgb(0, 0, 0); 
         }
 
+        .hairbase {
+            width: 250px;
+            height: 120px;
+            position: absolute;
+            top: 80px;
+            left: 120px;
+            z-index: 1;
+            background: #000000;
+            border-radius: 50%;
+        }
+
         .lefteye {
-            width: 40px;
-            height: 19px;
+            width: 50px;
+            height: 20px;
             position: absolute;
             top: 320px;
-            left: 165px;
+            left: 155px;
             z-index: 1;
             transform: rotate(15deg);
             background: #000000;
@@ -76,12 +89,42 @@
 
         }
 
+        .righteyewhite1 {
+            width: 24px;
+            height: 12px; 
+            background-color: #ffffff;
+            position: absolute;
+            top: 330px;
+            left: 274px;
+            z-index: 1;
+            border-top-left-radius: 120px;  
+            border-top-right-radius: 10px; 
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 50px; 
+            transform: rotate(193deg);
+        }
+
+        .righteyewhite2 {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 8px 12px 8px 0;
+            border-color: transparent #ffffff transparent transparent;
+            position: absolute;
+            border-bottom-right-radius: 40%;
+            border-top-right-radius: 30%;
+            border-top-left-radius: 30%;
+            top: 328px;
+            left: 268px;
+            z-index: 1;
+        }
+
         .righteye {
-            width: 40px;
-            height: 19px;
+            width: 50px;
+            height: 22px;
             position: absolute;
             transform: rotate(165deg);
-            top: 322px;
+            top: 325px;
             left: 260px;
             z-index: 1;
             background: #000000;
@@ -114,15 +157,20 @@
         } */
 
         .trapezoid {
-            width: 30px; /* 幅 */
-            height: 0px; /* y位置 */
-            border-top: 10px solid #5090B0; /* 高さ */
-            border-left: 10px solid transparent; /* 左側の角度 */
-            border-right: 10px solid transparent; /* 右側の角度 */
+            width: 30px; 
+            height: 0px; 
+            border-top: 10px solid #5090B0; 
+            border-left: 10px solid transparent; 
+            border-right: 10px solid transparent; 
+            /* border-radius: 0px 0px 0px 0px; */
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 0px;
             position: absolute;
             z-index: 3;
             top: 440px;
             left: 204px;
+            transform: rotate(180deg);
         }
 
         .chin {
@@ -161,11 +209,11 @@
         }
 
         .rightbrow{
-            width: 49px;
+            width: 55px;
             height: 9px;
             position: absolute;
             transform: rotate(165deg);
-            top: 306px;
+            top: 309px;
             left: 260px;
             z-index: 1;
             background: #000000;
@@ -173,10 +221,10 @@
         }
 
         .leftbrow{
-            width: 49px;
+            width: 55px;
             height: 9px;
             position: absolute;
-            top: 306px;
+            top: 305px;
             left: 160px;
             z-index: 1;
             transform: rotate(15deg);
@@ -204,4 +252,7 @@
     <div class="hairpart2"></div>
     <div class="lefthair"></div>
     <div class="righthair"></div>
+    <div class="hairbase"></div>
+    <div class="righteyewhite1"></div>
+    <div class="righteyewhite2"></div>
 </body>
